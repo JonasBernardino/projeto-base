@@ -5,10 +5,11 @@ import { SobreMimComponent } from "./components/sobre-mim-component/sobre-mim-co
 import { ProjetosComponent } from "./components/projetos-component/projetos-component";
 import { ContatoComponent } from "./components/contato-component/contato-component";
 import { FooterComponent } from "./components/footer-component/footer-component";
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, HeroComponent, SobreMimComponent, ProjetosComponent, ContatoComponent, FooterComponent],
+  imports: [HeaderComponent, FooterComponent, RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
