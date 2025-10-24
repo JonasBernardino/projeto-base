@@ -1,0 +1,10 @@
+.site-footer {
+    background: #fff;
+    border-top: 1px solid #ddd;
+    color: #555;
+}
+
+.site-footer .container {
+    padding: 12px 0;
+    font-size: .9rem;
+}

@@ -1,0 +1,20 @@
+.sobre .container {
+    padding: 24px 0;
+}
+
+.sobre h2 {
+    margin: 0 0 10px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skills li {
+    background: #eee;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: .9rem;
+}

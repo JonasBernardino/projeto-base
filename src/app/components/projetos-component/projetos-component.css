@@ -1,0 +1,29 @@
+.projetos .container {
+    padding: 24px 0;
+}
+
+.projetos h2 {
+    margin: 0 0 12px;
+}
+
+.grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.card h3 {
+    margin: 8px 0 6px;
+    font-size: 1rem;
+}
+
+.card p {
+    margin: 0 0 8px;
+}

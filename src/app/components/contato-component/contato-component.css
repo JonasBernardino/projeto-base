@@ -1,0 +1,28 @@
+.contato .container {
+    padding: 24px 0;
+}
+
+.contact-form {
+    display: grid;
+    gap: 10px;
+    max-width: 520px;
+}
+
+.contact-form label {
+    display: grid;
+    gap: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #7aa2ff;
+    outline-offset: 1px;
+}
