@@ -1,1 +1,10 @@
-<app-projetos-component></app-projetos-component>
+
+@for (item of projetos; track $index) {
+<app-projetos-component
+  nome={{item.nome}}
+  descricao={{item.descricao}}
+  [urlFoto]="item.urlFoto">
+</app-projetos-component>
+}
+
+

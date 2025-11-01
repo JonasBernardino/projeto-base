@@ -1,3 +1,4 @@
+
 .projetos .container {
     padding: 24px 0;
 }
@@ -27,3 +28,7 @@
 .card p {
     margin: 0 0 8px;
 }
+ img{
+    height: 200px;
+    width: 350px;
+ }
