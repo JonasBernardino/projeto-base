@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink } from "@angular/router";
 
 @Component({
@@ -8,9 +8,5 @@ import { RouterLink } from "@angular/router";
   styleUrl: './projetos-component.css'
 })
 export class ProjetosComponent {
-
-  @Input() nome = '';
-  @Input() descricao = '';
-  @Input() urlFoto = '';
 
 }
