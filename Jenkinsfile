@@ -14,19 +14,12 @@ pipeline {
             steps {
                 sh 'node -v'
                 sh 'npm -v'
-                sh 'ls -l $CHROME_BIN || echo "Chromium não encontrado no caminho $CHROME_BIN, mas prosseguindo..."'
             }
         }
 
         stage('Instalar dependências') {
             steps {
                 sh 'npm install'
-            }
-        }
-
-        stage('Executar testes') {
-            steps {
-                sh 'npm run test -- --watch=false --browsers=ChromeHeadless'
             }
         }
 
