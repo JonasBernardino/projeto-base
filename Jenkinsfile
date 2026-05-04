@@ -1,7 +1,18 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'node:25.9'
+        }
+    }
 
     stages {
+        stage('Verificar ambiente') {
+            steps {
+                sh 'node -v'
+                sh 'npm -v'
+            }
+        }
+
         stage('Instalar dependências') {
             steps {
                 sh 'npm ci'
