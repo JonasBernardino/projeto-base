@@ -14,7 +14,8 @@ pipeline {
             steps {
                 sh 'node -v'
                 sh 'npm -v'
-                sh 'which chromium'
+                sh 'echo $CHROME_BIN'
+                sh '$CHROME_BIN --version'
             }
         }
 
