@@ -5,11 +5,16 @@ pipeline {
         nodejs 'Node'
     }
 
+    environment {
+        CHROME_BIN = '/usr/bin/chromium'
+    }
+
     stages {
         stage('Verificar ambiente') {
             steps {
                 sh 'node -v'
                 sh 'npm -v'
+                sh 'which chromium'
             }
         }
 
